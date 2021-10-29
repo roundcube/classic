@@ -18,10 +18,12 @@ INSTALLATION
 The skin can be installed by putting the content in a subfolder of the
 the Roundcube's `skins` folder or by using composer:
 ```
-composer require "alecpl/classic-theme:~1.6.0"
+composer require "roundcube/classic:~1.6.0"
 ```
 Note: make sure to use version of the skin that matches the Roundcube version.
-If it is not available use the closest lower version number.
+If it is not available use the closest lower version number. For example,
+if your Roundcube version is 1.6.5, use skin version 1.6.x (with max X that exists),
+if 1.6.x does not exist use 1.5.x and so on. Using 1.7.x and up might not work.
 
 LICENSE
 -------
