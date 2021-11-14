@@ -1904,3 +1904,9 @@ input.from_address
   width: 18px;
   margin: 0;
 }
+
+/* Plugins-specific styles */
+
+#zipdownload-menu a {
+  padding-left: 10px !important;
+}
