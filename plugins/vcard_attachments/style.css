@@ -24,6 +24,11 @@ p.vcardattachment button {
 	margin: 6px;
 }
 
+#abookactions a.vcard {
+	display: block;
+	float: left;
+}
+
 #abookactions a.vcard span {
 	text-indent: -5000px;
 	display: inline-block;

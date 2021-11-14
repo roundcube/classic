@@ -1578,6 +1578,10 @@ input.from_address
   -o-text-overflow: ellipsis;
 }
 
+#compose-attachments ul li a {
+  text-decoration: none;
+}
+
 #compose-attachments li a.delete,
 #compose-attachments li a.cancelupload
 {
@@ -1586,7 +1590,6 @@ input.from_address
   height: 16px;
   padding-bottom: 2px;
   display: inline-block;
-  text-decoration: none;
   vertical-align: middle;
   background-position: 0px -392px;
 }
