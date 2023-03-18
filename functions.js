@@ -1042,6 +1042,7 @@ function rcube_init_mail_ui()
         .addEventListener('aftersend-attachment', 'uploadmenu', rcmail_ui)
         .addEventListener('aftertoggle-editor', 'resize_compose_body_ev', rcmail_ui)
         .addEventListener('afterbounce', function(){ rcmail_ui.show_popup('forwardmenu', false); })
+        .addEventListener('beforetoggle_status', function(uid){ if (rcmail.message_list.rows[uid].deleted) { rcmail.mark_message('undelete', uid); return false; } }) // Roundcube core uses the delete field for undelete action
         .gui_object('dragmenu', 'dragmenu');
 
       if (rcmail.gui_objects.mailboxlist) {

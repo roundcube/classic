@@ -719,6 +719,11 @@ table.messagelist.fixedcopy
   background: url(images/messageicons.png) center no-repeat;
 }
 
+.messagelist tr td.flags span.delete
+{
+  display: none; /* todo */
+}
+
 .messagelist tr .attachment span.attachment
 {
   background-position: 0 -170px;
